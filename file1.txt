@@ -1,1 +1,2 @@
-this is new changes to file
+Hello I'm david
+I'm Learning Math and Git :) 
