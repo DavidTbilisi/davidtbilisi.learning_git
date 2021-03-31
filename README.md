@@ -21,3 +21,24 @@ git add -A
 
 
 ## Branch
+
+## Log 
+
+
+**დროის ლიმიტი**
+```git
+git log --since="3 days ago" --oneline
+```
+
+**კონკრეტული ფაილის ისტორიის სანახავად**
+```git
+git log -- filename --oneline
+```
+
+
+## Show 
+დეტალური ინფოს სანახავად
+
+```git
+git show somehash
+```
