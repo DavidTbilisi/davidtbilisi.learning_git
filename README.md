@@ -18,9 +18,34 @@ git mv old.txt new.txt
 git add -A
 ```
 
-
-
 ## Branch
+
+**ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
+```git
+git branch -a
+```
+
+**ტოტის შესაქმნელად**
+```git
+git branch newbranch
+```
+
+
+**ტოტის შესაცვლელად**
+```git
+git checkout newbranch
+```
+
+
+**ტოტისთვის სახელის შესაცვლელად**
+```git
+git branch -m old_branch_name new_branch_name
+```
+
+**ტოტის წასაშლელად**
+```git
+git branch -d old_branch_name
+```
 
 ## Log 
 
@@ -41,4 +66,17 @@ git log -- filename --oneline
 
 ```git
 git show somehash
+```
+
+
+## Alias
+
+გლობალური ალიასები ინახება ამ მისამართზე
+```bash
+cd ~/.gitconfig
+```
+
+**გლობალური ალიასის შესაქმნელად**
+```git
+git config --global alias.somealias "somename --param1 --param2 --param3"
 ```
