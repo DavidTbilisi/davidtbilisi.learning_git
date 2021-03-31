@@ -1,12 +1,7 @@
 # GIT LEARNING
 
 
-
 ## Basics
-
-თუ ჩვენ უბრალოდ წავშილით ფაილებს და ჩვეულებრივ `git add . ` -ით შევინახავთ. ჩაითვლება რომ შევქმენით ახალი ფაილი და წავშალეთ ძველი.
-
-მაგრამ იმისთვის რომ სახელის შეცვლად აღიქვას, შეგვიძლია გამოვიყენოთ შემდეგი ბრძანებები:
 
 **სახელის შეცვლა git -ის მეშვეობით**
 ```git
@@ -17,7 +12,7 @@ git mv old.txt new.txt
 ```git
 git add -A
 ```
-
+---
 ## Branch
 
 **ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
@@ -46,7 +41,7 @@ git branch -m old_branch_name new_branch_name
 ```git
 git branch -d old_branch_name
 ```
-
+---
 ## Log 
 
 
@@ -60,7 +55,7 @@ git log --since="3 days ago" --oneline
 git log -- filename --oneline
 ```
 
-
+---
 ## Show 
 დეტალური ინფოს სანახავად
 
@@ -68,7 +63,7 @@ git log -- filename --oneline
 git show somehash
 ```
 
-
+---
 ## Alias
 
 გლობალური ალიასები ინახება ამ მისამართზე
