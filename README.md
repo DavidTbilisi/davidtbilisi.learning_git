@@ -1,4 +1,4 @@
-# GIT LEARNING
+# GIT LEARNING conflict resolutionos
 
 
 ## Basics
