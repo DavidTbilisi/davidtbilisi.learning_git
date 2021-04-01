@@ -23,7 +23,7 @@ git commit -am "commit messsage"
 
 ```git
 git commit --amend
-
+```
 ## Branch
 
 **ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
