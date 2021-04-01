@@ -1,4 +1,4 @@
-# GIT LEARNING
+# GIT LEARNING conflicts
 
 
 ## Basics
@@ -30,7 +30,7 @@ git branch newbranch
 ```git
 git checkout newbranch
 ```
-g
+
 **ტოტისთვის სახელის შესაცვლელად**
 ```git
 git branch -m old_branch_name new_branch_name
