@@ -31,7 +31,7 @@ git branch newbranch
 git checkout newbranch
 ```
 
-
+ragac ubralod konfliqtistvis
 **ტოტისთვის სახელის შესაცვლელად**
 ```git
 git branch -m old_branch_name new_branch_name
