@@ -61,7 +61,13 @@ git merege other_branch
 ```git
 git mergetool
 ```
-
+---
+## Rebase
+**ცვლის ტოტის საწყისს**
+```git
+git checkout otherbranch
+git rebase master
+```
 
 ---
 ## Log 
