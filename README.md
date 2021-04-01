@@ -13,6 +13,16 @@ git mv old.txt new.txt
 git add -A
 ```
 ---
+
+## Commit 
+git add and commit with short message
+```git
+git commit -am "commit messsage"
+```
+
+```git
+git commit --amend
+
 ## Branch
 
 **ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
@@ -69,6 +79,17 @@ git checkout otherbranch
 git rebase master
 ```
 
+```git
+git rebase --abort
+```
+
+```git
+git rebase --continue
+```
+
+```git
+git pull --rebase origin master
+```
 ---
 ## Log 
 
