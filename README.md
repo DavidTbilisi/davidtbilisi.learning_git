@@ -31,11 +31,6 @@ git branch newbranch
 git checkout newbranch
 ```
 
-<<<<<<< HEAD
-ragac ubralod konfliqtistvis
-=======
-axla mainc qeni konfliqti
->>>>>>> conspect/basics
 **ტოტისთვის სახელის შესაცვლელად**
 ```git
 git branch -m old_branch_name new_branch_name
