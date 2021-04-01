@@ -218,3 +218,8 @@ git tag -a tagname sha_of_commit
 ```git
 git tag -a tagname -f sha_of_commit
 ```
+
+**ტეგის გადატანა სხვა ქომითისთვის**
+```git
+git push origin tagname
+```
