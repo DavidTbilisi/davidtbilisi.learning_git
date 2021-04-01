@@ -200,7 +200,17 @@ git show tagname
 git show --delete tagname
 ```
 
+**release** 
+- Major release number
+- Minor release number
+- Maintenance release number (bugfixes only)
 
 ```git
 git tag -a v-1.0.0
 ```
+
+**ტეგის მინიჭება კონკრეტული ქომითისთვის**
+```git
+git tag -a tagname sha_of_commit
+```
+
