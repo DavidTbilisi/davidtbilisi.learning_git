@@ -219,7 +219,25 @@ git tag -a tagname sha_of_commit
 git tag -a tagname -f sha_of_commit
 ```
 
-**ტეგის გადატანა სხვა ქომითისთვის**
+**კონკრეტული ტეგის გადატანა GitHub-ზე**
+
+რაც თავის მხრივ ქმნის zip ფაილის გადმოწერის საშუალებას.
 ```git
 git push origin tagname
+```
+
+
+**ტეგების გადატანა GitHub-ზე**
+
+```git
+git push origin master --tags
+```
+
+**ტეგების წაშლა GitHub-დან**
+
+> push nothing to this tag name
+
+რჩება ლოკალურად მაგრამ იშლება GitHub-დან
+```git
+git push origin :tagname
 ```
