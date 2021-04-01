@@ -76,6 +76,12 @@ cd ~/.gitconfig
 git config --global alias.somealias "somename --param1 --param2 --param3"
 ```
 ## Diff
+**განსხვავების სანახავად 2 ტოტს შორის**
 ```git
 git diff branch1 branch2
 ```
+
+```git
+git difftool branch1 branch2
+```
+
