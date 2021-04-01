@@ -15,6 +15,7 @@ git add -A
 ---
 
 ## Commit 
+
 git add and commit with short message
 ```git
 git commit -am "commit messsage"
