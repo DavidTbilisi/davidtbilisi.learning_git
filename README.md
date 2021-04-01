@@ -1,4 +1,4 @@
-# GIT LEARNING conflicts
+# GIT LEARNING conflict resolutionos
 
 
 ## Basics
@@ -31,6 +31,7 @@ git branch newbranch
 git checkout newbranch
 ```
 
+axla mainc qeni konfliqti
 **ტოტისთვის სახელის შესაცვლელად**
 ```git
 git branch -m old_branch_name new_branch_name
