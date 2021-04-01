@@ -15,6 +15,7 @@ git add -A
 ---
 
 ## Commit 
+
 git add and commit with short message
 ```git
 git commit -am "commit messsage"
@@ -22,7 +23,7 @@ git commit -am "commit messsage"
 
 ```git
 git commit --amend
-
+```
 ## Branch
 
 **ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
