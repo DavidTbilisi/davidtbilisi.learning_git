@@ -75,3 +75,7 @@ cd ~/.gitconfig
 ```git
 git config --global alias.somealias "somename --param1 --param2 --param3"
 ```
+## Diff
+```git
+git diff branch1 branch2
+```
