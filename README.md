@@ -13,6 +13,16 @@ git mv old.txt new.txt
 git add -A
 ```
 ---
+
+## Commit 
+git add and commit with short message
+```git
+git commit -am "commit messsage"
+```
+
+```git
+git commit --amend
+
 ## Branch
 
 **ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
@@ -69,6 +79,17 @@ git checkout otherbranch
 git rebase master
 ```
 
+```git
+git rebase --abort
+```
+
+```git
+git rebase --continue
+```
+
+```git
+git pull --rebase origin master
+```
 ---
 ## Log 
 
@@ -115,3 +136,71 @@ git difftool branch1 branch2
 ```
 
 
+## Stash
+სიტყვა ნიშნავს დამალვას, დაფარულ საგანძურს
+
+**დროებით დამალვა (კომენტარებით)**
+```git
+git stash save "comment message"
+```
+
+**დროებით დამალვა (კომენტარებით)**
+`-u` for untrecked
+```git
+git stash -u save "comment message"
+```
+**დამალულის სიის ჩვენება**
+
+```git
+git stash list
+```
+**კონკრეტული საგანძურის ნახვა**
+```git
+git stash show@{n}
+```
+**საგანძურის დაბეუნება**
+```git
+git stash apply stash@{1}
+```
+
+```git
+git stash drop stash@{1}
+```
+
+**apply & drop last stash**
+```git
+git stash pop
+```
+
+```git
+git stash branch new_branch_name
+```
+
+**ყველა საგანძურის წაშლა**
+```git
+git stash clear
+```
+---
+## Tags
+
+```git
+git tag tagname
+```
+
+```git
+git tag --list
+```
+
+```git
+git show tagname
+```
+
+
+```git
+git show --delete tagname
+```
+
+
+```git
+git tag -a v-1.0.0
+```
