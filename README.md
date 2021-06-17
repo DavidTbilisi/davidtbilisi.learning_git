@@ -52,8 +52,15 @@ git branch -m old_branch_name new_branch_name
 git branch -d old_branch_name
 ```
 ---
+## Fetch [doc](https://git-scm.com/docs/git-fetch)
+![Fetch image](https://www.edureka.co/community/?qa=blob&qa_blobid=5756095483457844058)
 
-## Merge
+მოაქვს მეტა მონაცემები remote repo-დან
+```git
+git fetch origin master --all
+```
+
+## Merge [doc](https://git-scm.com/docs/git-merge)
 
 იმისთვის რომ მარტივი იყოს დასამახსოვრებლად, სიტყვა merge -ს ერთერთი მნიშვნელობა არის __შთანთქმა__ ან __ჩაყლაპვა__. შესაბამისად შეგვიძლია წარმოვიდგინოთ, როგორ __ყლაპავს__ მიმდინარე ტოტი, მითითებულს
 
@@ -66,6 +73,9 @@ git merege other_branch
 
 `fast-forward` - (default param) როდესაც master-ზე არ მომხდარა ცვლილებები და ისე ერთიანდება, თითქოს არც ყოფილა განტოტვა.
 
+![](https://res.cloudinary.com/practicaldev/image/fetch/s--np1tGOur--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.imgur.com/hNZADrt.gif)
+
+
 `--no-ff` - ისე ერთიანდება, თითქოს __ყოფილა__ განტოტვა.
 
 **კონფლიქტების გადაწყვეტა**
@@ -75,6 +85,9 @@ git mergetool
 ---
 ## Rebase
 **ცვლის ტოტის საწყისს**
+
+![Rebase gif](https://res.cloudinary.com/practicaldev/image/fetch/s--5J2KO7OU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rf2gl1srlyiksxvbws3z.gif)
+
 ```git
 git checkout otherbranch
 git rebase master
@@ -87,6 +100,9 @@ git rebase --abort
 ```git
 git rebase --continue
 ```
+
+![](https://cdn.hackernoon.com/hn-images/1*IxDdJ5CygvSWdD8MCNpZNg.gif)
+
 
 ```git
 git pull --rebase origin master
@@ -207,7 +223,7 @@ git show --delete tagname
 - Maintenance release number (bugfixes only)
 
 ```git
-git tag -a v-1.0.0
+git tag -a v1.0.0
 ```
 
 **ტეგის მინიჭება კონკრეტული ქომითისთვის**
