@@ -71,7 +71,7 @@ git checkout master
 git merege other_branch 
 ```
 
-`fast-forward` - (default param) როდესაც master-ზე არ მომხდარა ცვლილებები და ისე ერთიანდება, თითქოს არც ყოფილა განტოტვა.
+`--fast-forward` - (default param) როდესაც master-ზე არ მომხდარა ცვლილებები და ისე ერთიანდება, თითქოს არც ყოფილა განტოტვა.
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--np1tGOur--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://i.imgur.com/hNZADrt.gif)
 
