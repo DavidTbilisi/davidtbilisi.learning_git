@@ -1,5 +1,6 @@
 # GIT LEARNING
 [Link to course](https://www.udemy.com/course/git-complete/)
+[Shortcuts List](https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index)
 
 ## Basics
 
