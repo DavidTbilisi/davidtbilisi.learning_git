@@ -2,6 +2,9 @@
 - [Link to course](https://www.udemy.com/course/git-complete/)
 - [Visual reference](https://lurklurk.org/gitpix/gitpix.html)
 - [Shortcuts List](https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index)
+- Videos
+  - [Git For Ages 4 And Up](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
+  - [Git with Scott Chacon of GitHub](https://youtu.be/ZDR433b0HJY?si=bA9NX6ViD01hFpgV)
 
 ## Basics
 
