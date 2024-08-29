@@ -6,11 +6,35 @@
 - Videos
   - [Git For Ages 4 And Up](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
   - [Git with Scott Chacon of GitHub](https://youtu.be/ZDR433b0HJY?si=bA9NX6ViD01hFpgV)
+ 
+## Most Used 
+
+
+### Reset vs Revert
+reset -ი გამოიყენება მანამდე სანამ არ გავაკეთებთ push -ს, <br> ხოლო push -ის გაკეთების მერე ვიყენებთ revert -ს
+
+```bash
+# შლის ყველა დაუქომითებელ ცვლილებას
+git reset --hard
+```
+
+```bash
+# შლის ბოლო 2 commit-ს
+git reset HEAD~2 --hard
+```
+
+```bash
+# hash-ად უნდა მივუთითოთ ის hash-ი რომლის გაუქმებაც გვინდა
+git revert <hash>
+```
+
+
+
 
 ## Basics
 
 **სახელის შეცვლა git -ის მეშვეობით**
-```git
+```bash
 git mv old.txt new.txt
 ```
 
