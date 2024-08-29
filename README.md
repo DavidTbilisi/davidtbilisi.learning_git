@@ -10,7 +10,7 @@
 ## Most Used 
 
 
-### Reset vs Revert
+### Reset vs Revert vs Restore
 reset -ი გამოიყენება მანამდე სანამ არ გავაკეთებთ push -ს, <br> ხოლო push -ის გაკეთების მერე ვიყენებთ revert -ს
 
 ```bash
@@ -24,11 +24,23 @@ git reset HEAD~2 --hard
 ```
 
 ```bash
+# ქმნის ახალ Commit-ს ძველის გასაუქმებლად
+
 # hash-ად უნდა მივუთითოთ ის hash-ი რომლის გაუქმებაც გვინდა
+# გამოიყენება ერთი კონკრეტული commit-ის გასაუქმებლად
 git revert <hash>
 ```
 
+```bash
+# აკოპირებს source-ის მდგომარეობას მიმდინარე სამუშაო ფაილში
+git restore filename --source=<Branchname or HEAD~n>
+```
 
+### Commiting 
+```bash
+# ფაილის დამატება და დამახსოვრება
+git commit -am [message]
+```
 
 
 ## Basics
