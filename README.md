@@ -22,7 +22,9 @@
 | --soft           | ❌რჩება შეუცვლელი | ❌რჩება შეუცვლელი | მოძრაობს მხოლოდ HEAD პოინტერი                |
 | --mixed(default) | ❌რჩება შეუცვლელი | ✅იცვლება         | იშლება მხოლოდ Staging Area                   |
 | --hard           | ✅იცვლება         | ✅იცვლება         | იშლება Staging Area-ც და Working Directory-ც |
-![[git_reset_types.png]]
+
+<img width="700" height="408" alt="git_reset_types" src="https://github.com/user-attachments/assets/8986e2c0-ef92-43c6-a108-9b1df29c7cc9" />
+
 
 ```bash
 # შლის ყველა დაუქომითებელ ცვლილებას
