@@ -23,8 +23,8 @@
 | --mixed(default) | ❌რჩება შეუცვლელი | ✅იცვლება         | იშლება მხოლოდ Staging Area                   |
 | --hard           | ✅იცვლება         | ✅იცვლება         | იშლება Staging Area-ც და Working Directory-ც |
 
-<img width="700" height="408" alt="git_reset_types" src="https://github.com/user-attachments/assets/8986e2c0-ef92-43c6-a108-9b1df29c7cc9" />
 
+<img width="700" height="408" alt="git_reset_types" src="https://github.com/user-attachments/assets/8986e2c0-ef92-43c6-a108-9b1df29c7cc9" />
 
 ```bash
 # შლის ყველა დაუქომითებელ ცვლილებას
@@ -35,7 +35,7 @@ git reset --hard
 # შლის ბოლო 2 commit-ს
 git reset HEAD~2 --hard
 ```
-
+### Revert
 ```bash
 # ქმნის ახალ Commit-ს ძველის გასაუქმებლად
 
@@ -43,17 +43,15 @@ git reset HEAD~2 --hard
 # გამოიყენება ერთი კონკრეტული commit-ის გასაუქმებლად
 git revert <hash>
 ```
+
 ![Git revert visual](https://blog.nakulrajput.com/wp-content/uploads/2018/10/Git-Reverting-Resetting.jpg)
+
+### Restore
 ```bash
 # აკოპირებს source-ის მდგომარეობას მიმდინარე სამუშაო ფაილში
 git restore filename --source=<Branchname or HEAD~n>
 ```
 
-### Commiting 
-```bash
-# ფაილის დამატება და დამახსოვრება
-git commit -am [message]
-```
 
 
 ## Basics
@@ -72,28 +70,31 @@ git add -A
 ## Commit 
 
 git add and commit with short message
-```git
-git commit -am "commit messsage"
+
+```bash
+# ფაილის დამატება და დამახსოვრება
+git commit -am [message]
 ```
 
-```git
+
+```bash
 git commit --amend
 ```
 ## Branch
 
 **ჩამოთვლისი ლოკალურ და რემოუთ ტოტებს**
-```git
+```bash
 git branch -a
 ```
 
 **ტოტის შესაქმნელად**
-```git
+```bash
 git branch newbranch
 ```
 
 
 **ტოტის შესაცვლელად**
-```git
+```bash
 git checkout newbranch
 ```
 
@@ -318,7 +319,7 @@ git push origin :tagname
 ქვემოთ მოცემულ მაგალითში ვაკოპირებთ C  commit -ს 
 
 > [!warning] 
-> შეიძლება გამოივიოს კონფლიქტები 
+> მაღალი ალბათობით შეიძლება გამოივიოს კონფლიქტები 
 
 ```mermaid
 gitGraph
