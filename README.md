@@ -10,8 +10,19 @@
 ## Most Used 
 
 
-### Reset vs Revert vs Restore
-reset -ი გამოიყენება მანამდე სანამ არ გავაკეთებთ push -ს, <br> ხოლო push -ის გაკეთების მერე ვიყენებთ revert -ს
+### Reset vs Revert vs Restore (აღდგენის მეთოდები)
+<mark>reset</mark> -ი გამოიყენება მანამდე სანამ არ გავაკეთებთ push -ს,<br>ხოლო push -ის გაკეთების მერე ვიყენებთ <mark>revert</mark> -ს<br><mark>Restore</mark>-ი აკოპირებს source-ის მდგომარეობას მიმდინარე სამუშაო ფაილში
+
+
+### Reset 
+ცვლის HEAD პოინტერს 
+
+| ტიპი             | Working dir      | Stage Area       | აღწერა                                       |
+| ---------------- | ---------------- | ---------------- | -------------------------------------------- |
+| --soft           | ❌რჩება შეუცვლელი | ❌რჩება შეუცვლელი | მოძრაობს მხოლოდ HEAD პოინტერი                |
+| --mixed(default) | ❌რჩება შეუცვლელი | ✅იცვლება         | იშლება მხოლოდ Staging Area                   |
+| --hard           | ✅იცვლება         | ✅იცვლება         | იშლება Staging Area-ც და Working Directory-ც |
+![[git_reset_types.png]]
 
 ```bash
 # შლის ყველა დაუქომითებელ ცვლილებას
@@ -30,7 +41,7 @@ git reset HEAD~2 --hard
 # გამოიყენება ერთი კონკრეტული commit-ის გასაუქმებლად
 git revert <hash>
 ```
-
+![Git revert visual](https://blog.nakulrajput.com/wp-content/uploads/2018/10/Git-Reverting-Resetting.jpg)
 ```bash
 # აკოპირებს source-ის მდგომარეობას მიმდინარე სამუშაო ფაილში
 git restore filename --source=<Branchname or HEAD~n>
@@ -128,7 +139,7 @@ git mergetool
 ## Rebase
 **ცვლის ტოტის საწყისს**
 
-![Rebase gif](https://res.cloudinary.com/practicaldev/image/fetch/s--5J2KO7OU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rf2gl1srlyiksxvbws3z.gif)
+![Rebase gif](https://blog.mralx.com/d47851d6ea6094c1eaf433e8da6d6656/rebase.gif)
 
 ```git
 git checkout otherbranch
@@ -254,7 +265,6 @@ git tag --list
 git show tagname
 ```
 
-
 ```git
 git show --delete tagname
 ```
@@ -300,3 +310,24 @@ git push origin master --tags
 ```git
 git push origin :tagname
 ```
+
+## Cherry pick
+ერთი კონკრეტული commit -ის დაკოპირება სხვა branch-ზე
+ქვემოთ მოცემულ მაგალითში ვაკოპირებთ C  commit -ს 
+
+> [!warning] 
+> შეიძლება გამოივიოს კონფლიქტები 
+
+```mermaid
+gitGraph
+    commit id: "A" tag: "main"
+    commit id: "B"
+    branch feature-xyz
+    checkout feature-xyz
+    commit id: "C"
+    commit id: "D"
+    checkout main
+    commit id: "E"
+    commit id: "C'" tag: "cherry-pick აღებული C-დან"
+```
+
